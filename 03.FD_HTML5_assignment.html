@@ -1,194 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        h1{
-            text-align: center;
-            text-decoration: underline;            
+        * {
+            /* margin: 0; */
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid black; */
         }
-        h4{
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h4 {
             text-align: center;
         }
-        hr{
+
+        hr {
             width: 60%;
             border: 2px solid black;
         }
-        li{
+
+        li {
             font-size: 30px;
             text-decoration: underline;
         }
-        p{
+
+        p {
             font-size: 18px;
         }
-        .row{
+
+        .row {
             width: 90%;
             display: flex;
             border: 1px dotted black;
         }
-        div[class*="col"]{
+
+        div[class*="col"] {
             border: 1px solid black;
         }
-        .col30{
+
+        .col30 {
             width: 30%;
         }
-        .col70{
+
+        .col70 {
             width: 70%;
         }
-        dt, dd {
+
+        dt,
+        dd {
             font-size: 18px;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>HTML5 Assignment</h1>
-        <h4>(Questions and Answers made by HTML vscode editor with <mark> HTML5 characteristics</mark>)</h4>
-        <br/><hr/><br/>
+    <header id="header">
+        <div class="container">
+            <h1>HTML5 Assignment</h1>
+            <h4>(Questions and Answers made by HTML vscode editor with <mark> HTML5 characteristics</mark>)</h4>
+        </div>
+        <br />
+        <hr /><br />
     </header>
     <section>
-        <ol >
-            <li>What are the new tags added in HTML5?</li>
-            <p>The following tags (elements) have been introduced in HTML5</p>
-            <div class="row">
-                <div class="col30"><h3>Tags (Elements)</h3></div>
-                <div class="col70"><h3>Description</h3></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; article &gt;.....&lt; / article &gt;</p></div>
-                <div class="col70"><p>Represents an independent piece of content of a document, such as a blog entry or newspaper article</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; aside &gt;.....&lt; / aside &gt;</p></div>
-                <div class="col70"><p>Represents a piece of content that is only slightly related to the rest of the page.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; audio &gt;.....&lt; / audio &gt;</p></div>
-                <div class="col70"><p>Defines an audio file.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; canvas &gt;.....&lt; / canvas &gt;</p></div>
-                <div class="col70"><p>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; command &gt;.....&lt; / command &gt;</p></div>
-                <div class="col70"><p>Represents a command the user can invoke.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; datalist &gt;.....&lt; / datalist &gt;</p></div>
-                <div class="col70"><p>Together with the a new list attribute for input can be used to make combo boxes</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; details &gt;.....&lt; / details &gt;</p></div>
-                <div class="col70"><p>Represents additional information or controls which the user can obtain on demand</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; embed &gt;.....&lt; / embed &gt;</p></div>
-                <div class="col70"><p>Defines external interactive content or plugin.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; figure &gt;.....&lt; / figure &gt;</p></div>
-                <div class="col70"><p>Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; footer &gt;.....&lt; / footer &gt;</p></div>
-                <div class="col70"><p>Represents a footer for a section and can contain information about the author, copyright information, et cetera.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; header &gt;.....&lt; / header &gt;</p></div>
-                <div class="col70"><p>Represents a group of introductory or navigational aids.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; hgroup &gt;.....&lt; / hgroup &gt;</p></div>
-                <div class="col70"><p>Represents the header of a section.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; keygen &gt;.....&lt; / keygen &gt;</p></div>
-                <div class="col70"><p>Represents control for key pair generation.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; mark &gt;.....&lt; / mark &gt;</p></div>
-                <div class="col70"><p>Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; meter &gt;.....&lt; / meter &gt;</p></div>
-                <div class="col70"><p>Represents a measurement, such as disk usage.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; nav &gt;.....&lt; / nav &gt;</p></div>
-                <div class="col70"><p>Represents a section of the document intended for navigation.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; output &gt;.....&lt; / output &gt;</p></div>
-                <div class="col70"><p>Represents some type of output, such as from a calculation done through scripting.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; progress &gt;.....&lt; / progress &gt;</p></div>
-                <div class="col70"><p>Represents a completion of a task, such as downloading or when performing a series of expensive operations.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; ruby &gt;.....&lt; / ruby &gt;</p></div>
-                <div class="col70"><p>Together with <rt> and <rp> allow for marking up ruby annotations.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; section &gt;.....&lt; / section &gt;</p></div>
-                <div class="col70"><p>Represents a generic document or application section</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; time &gt;.....&lt; / time &gt;</p></div>
-                <div class="col70"><p>Represents a date and/or time.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; video &gt;.....&lt; / video &gt;</p></div>
-                <div class="col70"><p>Defines a video file.</p></div>
-            </div>
-            <div class="row">
-                <div class="col30"><p>&lt; wbr &gt;.....&lt; / wbr &gt;</p></div>
-                <div class="col70"><p>Represents a line break opportunity.</p></div>
-            </div>
-            <h3>New types for &lt; input &gt; tag</h3>
-            <p>The input element's type attribute now has the following new values </p>
-            <p>
-                color ==&gt; Color selector, which could be represented by a wheel or swatch picker<br/>
-                date ==&gt; Selector for calendar date<br/>
-                datetime-local ==&gt; Date and time display, with no setting or indication for time zones<br/>
-                datetime ==&gt; Full date and time display, including a time zone.<br/>
-                email ==&gt; Input type should be an email.<br/>
-                month ==&gt; Selector for a month within a given year<br/>
-                number ==&gt; A field containing a numeric value only<br/>
-                range ==&gt; Numeric selector within a range of values, typically visualized as a slider<br/>
-                search ==&gt; Term to supply to a search engine. For example, the search bar atop a browser.<br/>
-                tel ==&gt; Input type should be telephone number.<br/>
-                time ==&gt; Time indicator and selector, with no time zone information<br/>
-                url ==&gt; Input type should be URL type.<br/>
-                week ==&gt; Selector for a week within a given year
-            </p>
-            <br/><br/>
-            <li>How to embed audio and video in a webpage?</li>
-            <p>
-                To embed audio and video in a webpage we have audio tag & video tag as shown below.<br/>
-                For audio ==&gt; &lt; audio controls src="" &gt; &lt; / audio &gt;
-                <br/>
-                for video ==&gt; &lt; video controls src="" &gt; &lt; / video &gt;
-                <br/><br/>
-                we can use embed tag also for embed audio, video and any document file also.
-                <br/>
-                for embed ==&gt; &lt; embed src="" type="" / &gt;
-            </p>
-            <br/><br/>
-            <li>Semantic element in HTML5?</li>
-            <p>
-                Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way. Elements such as &lt; header &gt; , &lt; footer &gt; and &lt; article &gt; are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.
-                <br/>
-                Examples of non-semantic elements: &lt; div &gt; and &lt; span &gt; - Tells nothing about its content.
-                <br/>
-                Examples of semantic elements: &lt; form &gt; , &lt; table &gt; , and &lt; article &gt; - Clearly defines its content.
-            </p>
-            <dl>
-                <dt>The semantic elements added in HTML5 are:</dt>
+        <div class="container">
+            <ol>
+                <li>What are the new tags added in HTML5?</li>
+                <p>The following tags (elements) have been introduced in HTML5</p>
+                <div class="row">
+                    <div class="col30">
+                        <h3>Tags (Elements)</h3>
+                    </div>
+                    <div class="col70">
+                        <h3>Description</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; article &gt;.....&lt; / article &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents an independent piece of content of a document, such as a blog entry or newspaper
+                            article</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; aside &gt;.....&lt; / aside &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a piece of content that is only slightly related to the rest of the page.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; audio &gt;.....&lt; / audio &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Defines an audio file.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; canvas &gt;.....&lt; / canvas &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; command &gt;.....&lt; / command &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a command the user can invoke.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; datalist &gt;.....&lt; / datalist &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Together with the a new list attribute for input can be used to make combo boxes</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; details &gt;.....&lt; / details &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents additional information or controls which the user can obtain on demand</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; embed &gt;.....&lt; / embed &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Defines external interactive content or plugin.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; figure &gt;.....&lt; / figure &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a piece of self-contained flow content, typically referenced as a single unit from
+                            the main flow of the document.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; footer &gt;.....&lt; / footer &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a footer for a section and can contain information about the author, copyright
+                            information, et cetera.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; header &gt;.....&lt; / header &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a group of introductory or navigational aids.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; hgroup &gt;.....&lt; / hgroup &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents the header of a section.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; keygen &gt;.....&lt; / keygen &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents control for key pair generation.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; mark &gt;.....&lt; / mark &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a run of text in one document marked or highlighted for reference purposes, due to
+                            its relevance in another context.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; meter &gt;.....&lt; / meter &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a measurement, such as disk usage.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; nav &gt;.....&lt; / nav &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a section of the document intended for navigation.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; output &gt;.....&lt; / output &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents some type of output, such as from a calculation done through scripting.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; progress &gt;.....&lt; / progress &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a completion of a task, such as downloading or when performing a series of
+                            expensive operations.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; ruby &gt;.....&lt; / ruby &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Together with <rt> and
+                            <rp> allow for marking up ruby annotations.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; section &gt;.....&lt; / section &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a generic document or application section</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; time &gt;.....&lt; / time &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a date and/or time.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; video &gt;.....&lt; / video &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Defines a video file.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <p>&lt; wbr &gt;.....&lt; / wbr &gt;</p>
+                    </div>
+                    <div class="col70">
+                        <p>Represents a line break opportunity.</p>
+                    </div>
+                </div>
+                <h3>New types for &lt; input &gt; tag</h3>
+                <p>The input element's type attribute now has the following new values </p>
+                <p>
+                    color ==&gt; Color selector, which could be represented by a wheel or swatch picker<br />
+                    date ==&gt; Selector for calendar date<br />
+                    datetime-local ==&gt; Date and time display, with no setting or indication for time zones<br />
+                    datetime ==&gt; Full date and time display, including a time zone.<br />
+                    email ==&gt; Input type should be an email.<br />
+                    month ==&gt; Selector for a month within a given year<br />
+                    number ==&gt; A field containing a numeric value only<br />
+                    range ==&gt; Numeric selector within a range of values, typically visualized as a slider<br />
+                    search ==&gt; Term to supply to a search engine. For example, the search bar atop a browser.<br />
+                    tel ==&gt; Input type should be telephone number.<br />
+                    time ==&gt; Time indicator and selector, with no time zone information<br />
+                    url ==&gt; Input type should be URL type.<br />
+                    week ==&gt; Selector for a week within a given year
+                </p>
+                <br /><br />
+                <li>How to embed audio and video in a webpage?</li>
+                <p>
+                    To embed audio and video in a webpage we have audio tag & video tag as shown below.<br />
+                    For audio ==&gt; &lt; audio controls src="" &gt; &lt; / audio &gt;
+                    <br />
+                    for video ==&gt; &lt; video controls src="" &gt; &lt; / video &gt;
+                    <br /><br />
+                    we can use embed tag also for embed audio, video and any document file also.
+                    <br />
+                    for embed ==&gt; &lt; embed src="" type="" / &gt;
+                </p>
+                <br /><br />
+                <li>Semantic element in HTML5?</li>
+                <p>
+                    Semantic HTML elements are those that clearly describe their meaning in a human- and
+                    machine-readable way. Elements such as &lt; header &gt; , &lt; footer &gt; and &lt; article &gt; are
+                    all considered semantic because they accurately describe the purpose of the element and the type of
+                    content that is inside them.
+                    <br />
+                    Examples of non-semantic elements: &lt; div &gt; and &lt; span &gt; - Tells nothing about its
+                    content.
+                    <br />
+                    Examples of semantic elements: &lt; form &gt; , &lt; table &gt; , and &lt; article &gt; - Clearly
+                    defines its content.
+                </p>
+                <dl>
+                    <dt>The semantic elements added in HTML5 are:</dt>
                     <dd> &lt; article &gt; </dd>
                     <dd> &lt; aside &gt; </dd>
                     <dd> &lt; details &gt; </dd>
@@ -202,29 +338,39 @@
                     <dd> &lt; section &gt; </dd>
                     <dd> &lt; summary &gt; </dd>
                     <dd> &lt; time &gt; </dd>
-            </dl>
-             <br/><br/>   
-            <li>Describe Canvas and SVG tags.</li>
-            <dl>
-                <dt><b><u>=&gt; Canvas</u></b></dt>
+                </dl>
+                <br /><br />
+                <li>Describe Canvas and SVG tags.</li>
+                <dl>
+                    <dt><b><u>=&gt; Canvas</u></b></dt>
                     <dd>
-                        The &lt; canvas &gt; tag is used to draw graphics, on the fly, via scripting (usually JavaScript). The &lt; canvas &gt; tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.
+                        The &lt; canvas &gt; tag is used to draw graphics, on the fly, via scripting (usually
+                        JavaScript). The &lt; canvas &gt; tag is transparent, and is only a container for graphics, you
+                        must use a script to actually draw the graphics.
                     </dd>
-                <dt><b><u>=&gt; Svg</u></b></dt>
+                    <dt><b><u>=&gt; Svg</u></b></dt>
                     <dd>
-                        SVG stands for Scalable Vector Graphics and it is a language for describing 2D-graphics and graphical applications in XML and the XML is then rendered by an SVG viewer. SVG is mostly useful for vector type diagrams like Pie charts, Two-dimensional graphs in an X,Y coordinate system etc.
+                        SVG stands for Scalable Vector Graphics and it is a language for describing 2D-graphics and
+                        graphical applications in XML and the XML is then rendered by an SVG viewer. SVG is mostly
+                        useful for vector type diagrams like Pie charts, Two-dimensional graphs in an X,Y coordinate
+                        system etc.
                     </dd>
                     <dd>
-                        The &lt; svg &gt; tag defines a container for SVG graphics. SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+                        The &lt; svg &gt; tag defines a container for SVG graphics. SVG has several methods for drawing
+                        paths, boxes, circles, text, and graphic images.
                     </dd>
-            </dl>
-        </ol>
+                </dl>
+            </ol>
+        </div>
     </section>
-    
+    <br /><br />
     <footer>
-        <hr/>
-        <h4><mark>footer</mark></h4>
-        <hr/>
+        <div class="container">
+            <hr />
+            <h4><mark>footer</mark></h4>
+            <hr />
+        </div>
     </footer>
 </body>
+
 </html>
