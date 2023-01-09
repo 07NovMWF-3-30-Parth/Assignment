@@ -37,11 +37,99 @@
             text-decoration: underline;
             text-align: center;
         }
-        .container div{
+
+        div[class*="que"] {
             background-color: burlywood;
+            padding: 10px 20px;
+            margin: 30px auto;
         }
-        p{
+
+        p {
+            font-size: 20px;
+        }
+
+        dt {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        dd {
             font-size: 18px;
+        }
+
+        ul {
+            font-size: 20px;
+            list-style-position: inside;
+        }
+
+        table {
+            width: 80%;
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .col-33 {
+            width: 33.33%;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        .thumbnail {
+            background-color: gray;
+            color: white;
+            padding: 60px;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            background-color: white;
+            color: gray;
+        }
+
+        .content p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .end {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        button {
+            color: gray;
+            border-color: gray;
+            background-color: white;
+            padding: 5px 15px;
+        }
+
+        .view {
+            margin-right: -3px;
+        }
+
+        .edit {
+            margin-left: -3px;
+        }
+
+        .right p {
+            font-size: 15px;
         }
     </style>
 </head>
@@ -59,84 +147,509 @@
         <div class="container">
             <div class="que1">
                 <h2>1. What are the benefits of using CSS?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <dl>
+                    <dt>CSS saves time</dt>
+                    <dd>You can write CSS once and then reuse the same sheet in multiple HTML pages. You can define a
+                        style for each HTML element and apply it to as many Web pages as you want.</dd>
+                    <br>
+                    <dt>Easy maintenance</dt>
+                    <dd>To make a global change, simply change the style, and all elements in all the web pages will be
+                        updated automatically.</dd>
+                    <br>
+                    <dt>Global web standards</dt>
+                    <dd>Now HTML attributes are being deprecated and it is being recommended to use CSS. So it's a good
+                        idea to start using CSS in all the HTML pages to make them compatible with future browsers.</dd>
+                    <br>
+                    <dt>Platform Independence</dt>
+                    <dd>The Script offer consistent platform independence and can support latest browsers as well.</dd>
+                    <br>
+                    <dt>Faster Page Speed</dt>
+                    <dd>More code means slower page speed. And CSS enables you to use less code. CSS allows you to use
+                        one CSS rule and apply it to all occurrences of a certain tag within an HTML document.</dd>
+                    <br>
+                    <dt>Compatibility Across Devices</dt>
+                    <dd>Responsive web design matters. In today’s day and age, web pages must be fully visible and
+                        easily navigable on all devices. Whether mobile or tablet, desktop, or even smart TV, CSS
+                        combines with HTML to make responsive design possible.</dd>
+                </dl>
             </div>
             <div class="que2">
                 <h2>2. What are the disadvantages of CSS?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <dl>
+                    <dt>Security Issues</dt>
+                    <dd>Security is important in today’s world driven by technology and data. One of the major
+                        disadvantages of CSS is that it has limited security.</dd>
+                    <br>
+                    <dt>Confusion due to many CSS levels</dt>
+                    <dd>Beginners are more vulnerable to this issue. They might get confused while opting to learn CSS
+                        as there are many levels of CSS such as CSS2, CSS3, etc.</dd>
+                    <br>
+                    <dt>Cross-Browser Issues</dt>
+                    <dd>Different browsers work differently. So, you have to check that changes implemented in the
+                        website via CSS codes are reflected properly among all browsers.</dd>
+                    <br>
+                    <dt>Extra Work for Developers</dt>
+                    <dd>Design services are required to consider and test all CSS codes across different browsers for
+                        compatibility. Due to developers testing compatibility for different browsers, their workload
+                        increases.</dd>
+                </dl>
             </div>
             <div class="que3">
                 <h2>3. What is the difference between CSS2 and CSS3?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>Cascading Style Sheets or CSS manage the complete computing machine designing with one-click changes.
+                    the latest version of CSS is that the CSS3 version primarily differs from CSS2 at intervals the
+                    incorporation of Modules and completely different changes. The CSS3 version supports a lot of
+                    browsers than CSS2.</p>
+                <p>Other major changes/additions include the following features:</p>
+                <ul>
+                    <li>Combinator</li>
+                    <li>CSS Selectors</li>
+                    <li>Pseudo-elements</li>
+                    <li>Style properties</li>
+                </ul>
+                <table>
+                    <caption>difference between CSS2 & CSS3</caption>
+                    <thead>
+                        <tr>
+                            <th>CSS2</th>
+                            <th>CSS3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>There is no backward compatibility with CSS2</td>
+                            <td>There is backward compatibility maintained with CSS3</td>
+                        </tr>
+                        <tr>
+                            <td>With CSS2 only web safe fonts can be used</td>
+                            <td>With CSS3 special fonts can be used such as those in Google Fonts and TypeCast</td>
+                        </tr>
+                        <tr>
+                            <td>CSS2 Doesn't support the Border-Box property</td>
+                            <td>CSS3 support the Border-Box property</td>
+                        </tr>
+                        <tr>
+                            <td>CSS2 splits up different sections of the code into modules</td>
+                            <td>Both CSS and HTML were put into a single file, there was no concept of modules before
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSS2 version supports limited browser</td>
+                            <td>CSS3 version supports more browser than CSS2</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="que4">
                 <h2>4. Name a few CSS style components</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <h3>The components of CSS style are:</h3>
+                <dl>
+                    <dt>Selector:</dt>
+                    <dd>class name, id name, or element name that is the target</dd>
+                    <br>
+                    <dt>Attribute</dt>
+                    <dd>name of the attribute you want to style for example border, color, background, position, etc.
+                    </dd>
+                    <br>
+                    <dt>Value of Property</dt>
+                    <dd>the value that will be assigned to an attribute.</dd>
+                    <br><br>
+                </dl>
+                <h3>Main components of CSS:</h3>
+                <dl>
+                    <dt>(I) Easily maintainable</dt>
+                    <dd>If you are intended to make any global change, simply change the styling and you can see all
+                        other elements in all other webpages getting automatically updated.</dd>
+                    <br>
+                    <dt>(II) CSS is time-saving:</dt>
+                    <dd>You can just write the script once and reuse the same sheet as much time as you want.</dd>
+                    <br>
+                    <dt>(III) Superior styles to the native front end:</dt>
+                    <dd>CSS has comparatively a much wider array of attributes and list if compared to HTML. Therefore
+                        the HTML page can have a brighter look and feel if compared to the normal HTML attributes.</dd>
+                    <br>
+                    <dt>(IV) Ease with Search Engines:</dt>
+                    <dd>CSS is considered as a very convenient and an easy to read styling sheet. This means, that the
+                        search engines don’t have to put in a lot of effort in trying to read the text.</dd>
+                    <br>
+                    <dt>(V) Efficient cache storing:</dt>
+                    <dd>CSS can be used to store the web applications locally with the help of an offline cache
+                        mechanism which can be used to view the offline websites.</dd>
+                </dl>
             </div>
             <div class="que5">
                 <h2>5. What do you understand by CSS opacity?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>The opacity property in CSS specifies how transparent an element is.
+                    <br><br>Opacity has a default initial value of 1 (100% opaque).Values are a number from 0 to 1
+                    representing the opacity of the channel (the “alpha” channel). When an element has a value of 0 the
+                    element is completely invisible; a value of 1 is completely opaque (solid). Opacity is not
+                    inherited, but because the parent has opacity that applies to everything within it.
+                </p>
+                <p><b><u>Syntax</u></b><br>opacity: 0.9; <br> opacity: 90%; <br><br>
+                    /* Global values */<br>
+                    opacity: inherit | initial | revert | revert-layer | unset</p>
             </div>
             <div class="que6">
                 <h2>6. How can the background color of an element be changed?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>To change background color of an element we have <q>background-color</q> property in css<br>
+                    We can use this property in any element to change its background color. The background of an element
+                    is the total size of the element, including padding and border (but not the margin).</p>
+                <p><b><u>Syntax</u></b><br> background-color: property value(i.e. color name);<br>It has a default value
+                    i.e transparent.</p>
             </div>
             <div class="que7">
-                <h2>7. How can image repetition of the backup be controlled?</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <h2>7. How can image repetition of the backup be controlled?</h2>
+                <p>To control image repetition of the backup we have <q>background-repeat</q> property in css<br>
+                    Use this property and give property value <q>no-repeat</q> value for the background-repeat property
+                    if you do not want to repeat an image, in this case, the image will display only once.</p>
+                <p>The <b>background-repeat</b> property in CSS is used to repeat the background image both horizontally
+                    and vertically. It also decides whether the background image will be repeated or not.</p>
+                <p><b><u>Syntax</u></b><br>background-repeat: repeat | repeat-x | repeat-y | no-repeat | initial |
+                    inherit;</p>
             </div>
             <div class="que8">
                 <h2>8. What is the use of the background-position property?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>The <q>background-position</q> property in CSS is mainly used to sets the initial position for the
+                    background image ie., it is used to set an image at a certain position. The position that is
+                    relative to the positioning layer, can be set by using the <q>background-origin</q>
+                    property.<br><br>By default, a background-image is placed at the top-left corner of an element, and
+                    repeated both vertically and horizontally.</p>
+                <p><b><u>Syntax:</u></b><br>background-position: value;</p>
             </div>
             <div class="que9">
                 <h2>9. Which property controls the image scroll in the background?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>To control image scroll in the background we have <q>background-attachment</q> property in CSS. Which
+                    is used to specify the kind of attachment of the background image with respect to its container. It
+                    can be set to scroll or make it remain fixed. It can be applied to all HTML elements.</p>
+                <p><b><u>Syntax:</u></b><br>background-attachment: scroll | fixed | local | initial | inherit;</p>
             </div>
             <div class="que10">
                 <h2>10. Why should background and color be used as separate properties?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <dl>
+                    <dt>background</dt>
+                    <dd>The background shorthand CSS property sets all background style properties at once, such as
+                        color, image, origin and size, or repeat method.</dd>
+                    <dd>This property is a shorthand for the following CSS properties:</dd>
+                    <ul>
+                        <li>background-attachment</li>
+                        <li>background-clip</li>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-origin</li>
+                        <li>background-position</li>
+                        <li>background-repeat</li>
+                        <li>background-size</li>
+                    </ul>
+                    <br>
+                    <dt>color</dt>
+                    <dd>The color CSS property sets the foreground color value of an element's text and text
+                        decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on
+                        other properties and is the default for other color properties, such as border-color.</dd>
+                    <br><br>
+                    <dt>There are two reasons behind this:</dt>
+                    <dd>(1) It enhances the legibility of style sheets. The background property is a complex property in
+                        CSS, and if it is combined with color, the complexity will further increase.</dd>
+                    <dd>(2) Color is an inherited property while the background is not. So this can make confusion
+                        further.</dd>
+                </dl>
             </div>
             <div class="que11">
                 <h2>11. How to center block elements using CSS1?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>There are two steps to center block elements using CSS1-</p>
+                <dl>
+                    <dt>Step 1: Define the external width –</dt>
+                    <dd>We need to define the external width. Block-level elements have the default width of 100% of the
+                        webpage, so for centering the block element, we need space around it. So for generating the
+                        space, we are giving it a width.</dd>
+                    <br>
+                    <dt>Step 2: Set the left-margin and the right-margin of the element to auto –</dt>
+                    <dd>Since we produced a remaining space by providing external width so now we need to align that
+                        space properly that’s why we should use margin property. Margin is a property that tells how to
+                        align a remaining space. So for centering the element you must set left-margin to auto and
+                        right-margin to auto.</dd>
+                </dl>
+                <p><b><u>example</u></b><br>element {<br> &nbsp; &nbsp; &nbsp; width:200px;<br> &nbsp; &nbsp; &nbsp;
+                    margin:0 auto;<br>}</p>
             </div>
             <div class="que12">
                 <h2>12. How to maintain the CSS specifications?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>To maintain the CSS specifications we have to understand what is CSS specifications</p>
+                <p>The Specification defines how CSS properties should be implemented by browser vendors along with
+                    detailed algorithms, code samples and tabular information.<br>The Specification also include:</p>
+                <ul>
+                    <li>The syntax and data types of the language</li>
+                    <li>Detailed explanation on CSS Selectors</li>
+                    <li>How you can assign values to properties</li>
+                    <li>The Cascade (the "C" in CSS)</li>
+                    <li>How inheritance works</li>
+                    <li>The Box Model e.t.c</li>
+                </ul>
+                <p>Explanation on some of these topic are short and easy to understand while others are explained in
+                    great detail.</p>
+                <p>The Specification also specify how stylesheets can be included in your web document and how to target
+                    specific media e.g print or screen.</p>
+                <p>The CSS Specification prior to CSS3 was a single Specification, CSS3 on the other hand is divided
+                    into Modules which are Independent Specifications that can be worked on by different author(s) at
+                    different paces, that's why we have Selector Level 3 Specification, CSS Color 4, CSS Backgrounds and
+                    so on. Some of these modules are revisions of CSS2.1, and some are newly created, but all fall under
+                    the banner of CSS3.</p>
+                <p>The Specification should be your guide if you need to understand how a specific property or feature
+                    works behind the scene and how it works with other CSS properties.</p>
+                <p>Implementing this specifications is the way to maintain the CSS specifications.</p>
             </div>
             <div class="que13">
-                <h2>13. What are the ways to integrate CSS as a web page?</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <h2>13. What are the ways to integrate CSS as a web page?</h2>
+                <p>There are three methods to integrate CSS as a web pages.</p>
+                <dl>
+                    <dt>1. Inline method - </dt>
+                    <dd>by using the style attribute inside HTML elements.</dd>
+                    <br>
+                    <dt>2 .Embedded/Internal method -</dt>
+                    <dd>by using a &lt; style &gt; element in the &lt; head &gt; section.</dd>
+                    <br>
+                    <dt>3. Linked/Imported/External method - </dt>
+                    <dd>by using a &lt; link &gt; element to link to an external CSS file.<br>It is used when you want
+                        to make changes on multiple pages.</dd>
+                </dl>
             </div>
             <div class="que14">
                 <h2>14. What is embedded style sheets?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>An Embedded style sheet is a CSS style specification method used with HTML. You can embed the entire
+                    stylesheet in an HTML document by using the STYLE element in the head section of a HTML document.
+                </p>
+                <dl>
+                    <dt>the advantages of Embedded Style Sheets are-</dt>
+                    <dd>=> You can create classes for use on multiple tag types in the document.</dd>
+                    <dd>=> You can use selector and grouping methods to apply styles in complex situations.</dd>
+                    <dd>=> No extra download is required to import the information.</dd>
+                </dl>
             </div>
             <div class="que15">
                 <h2>15. What are the external style sheets?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>An external style sheet is a separate CSS file that can be linked to its actual HTML document with
+                    the help of &lt; link &gt; tag in head section of HTML document. Multiple webpages can use the same
+                    link to access the stylesheet.</p>
             </div>
             <div class="que16">
                 <h2>16. What are the advantages and disadvantages of using external style sheets?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <dl>
+                    <dt>The advantages of External Style Sheets are:</dt>
+                    <dd>- Using them, the styles of multiple documents can be controlled from one file.
+                    </dd>
+                    <dd>- Classes can be created for use on multiple HTML element types in many documents.
+                    </dd>
+                    <dd>- In complex situations, selector and grouping methods can be used to apply styles.
+                    </dd>
+                    <br>
+                    <dt>The disadvantages of External Style Sheets are:</dt>
+                    <dd>- In order to import style information for each document, an extra download is needed.</dd>
+                    <dd>- Until the external style sheet is loaded, it may not be possible to render the document.</dd>
+                    <dd>- While implementing style sheets, we need to test Web pages with multiple browsers in order to
+                        check compatibility issues.</dd>
+                    <dd>- For small number of style definitions, it is not viable.</dd>
+                </dl>
             </div>
             <div class="que17">
                 <h2>17. What is the meaning of the CSS selector?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>CSS selector is a pattern of elements and other terms that tell the browser which HTML elements
+                    should be selected to have the CSS property values inside the rule applied to them. It is the first
+                    part of a CSS Rule.<br><br>There are several different types of selectors in CSS: -</p>
+                <ul>
+                    <li>Universal selector</li>
+                    <li>Element selector</li>
+                    <li>Class selector</li>
+                    <li>ID selector</li>
+                    <li>Descendant Selector</li>
+                    <li>Child selector</li>
+                    <li>Adjacent selector</li>
+                    <li>General sibling selector</li>
+                    <li>Group selector</li>
+                </ul>
             </div>
             <div class="que18">
                 <h2>18. What are the media types allowed by CSS?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>One of the most important features of style sheets is that they specify how a document is to be
+                    presented on different media: on the screen, on paper, with a speech synthesizer, with a braille
+                    device, etc.</p>
+                <p>The names chosen for CSS media types reflect target devices for which the relevant properties make
+                    sense. In the following list of CSS media types the names of media types are normative, but the
+                    descriptions are informative. Likewise, the "Media" field in the description of each property is
+                    informative.</p>
+                <dl>
+                    <dt>all</dt>
+                    <dd>Suitable for all devices.</dd>
+                    <br>
+                    <dt>braille</dt>
+                    <dd>Intended for braille tactile feedback devices.</dd>
+                    <br>
+                    <dt>embossed</dt>
+                    <dd>Intended for paged braille printers.</dd>
+                    <br>
+                    <dt>handheld</dt>
+                    <dd>Intended for handheld devices (typically small screen, limited bandwidth).</dd>
+                    <br>
+                    <dt>print</dt>
+                    <dd>Intended for paged material and for documents viewed on screen in print preview mode. Please
+                        consult the section on paged media for information about formatting issues that are specific to
+                        paged media.</dd>
+                    <br>
+                    <dt>projection</dt>
+                    <dd>Intended for projected presentations, for example projectors. Please consult the section on
+                        paged media for information about formatting issues that are specific to paged media.</dd>
+                    <br>
+                    <dt>screen</dt>
+                    <dd>Intended primarily for color computer screens.</dd>
+                    <br>
+                    <dt>speech</dt>
+                    <dd>Intended for speech synthesizers. Note: CSS2 had a similar media type called 'aural' for this
+                        purpose. See the appendix on aural style sheets for details.</dd>
+                    <br>
+                    <dt>tty</dt>
+                    <dd>Intended for media using a fixed-pitch character grid (such as teletypes, terminals, or portable
+                        devices with limited display capabilities). Authors should not use pixel units with the "tty"
+                        media type.</dd>
+                    <br>
+                    <dt>tv</dt>
+                    <dd>Intended for television-type devices (low resolution, color, limited-scrollability screens,
+                        sound available).</dd>
+                    <br>
+                </dl>
             </div>
             <div class="que19">
                 <h2>19. What is the rule set?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <p>Each (valid) declaration block is preceded by one or more comma-separated selectors, which are
+                    conditions selecting some elements of the page. A selector group and an associated declarations
+                    block, together, are called a ruleset, or often a rule.</p>
+                <p>In other words,<br>The ruleset is used to identify that selectors can be attached with other
+                    selectors. It has two parts:</p>
+                <ul>
+                    <li>Selector - Selector indicates the HTML element you want to style.</li>
+                    <li>Declaration Block - The declaration block can contain one or more declarations separated by a
+                        semicolon.
+                    </li>
+                </ul>
+                <p><b><u>example:</u></b><br>h1 { color : yellow ; font-size : 11px ; }<br> where <q>h1</q> is selector
+                    and what is in curly brackets known as declaration block</p>
             </div>
             <div class="que20">
                 <h2>20. Create Layouts</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus animi harum doloremque necessitatibus impedit blanditiis eos fugit dolorum, nihil quaerat nemo quod excepturi accusantium corporis deserunt eligendi sunt voluptatibus tempore?</p>
+                <div class="layouts">
+                    <div class="row">
+                        <div class="col-33">
+                            <div class="thumbnail">
+                                <h4>Thumbnail</h4>
+                            </div>
+                            <div class="content">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <div class="end">
+                                    <div class="left">
+                                        <button class="view">View</button>
+                                        <button class="edit">Edit</button>
+                                    </div>
+                                    <div class="right">
+                                        <p>9 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="thumbnail">
+                                <h4>Thumbnail</h4>
+                            </div>
+                            <div class="content">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <div class="end">
+                                    <div class="left">
+                                        <button class="view">View</button>
+                                        <button class="edit">Edit</button>
+                                    </div>
+                                    <div class="right">
+                                        <p>9 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="thumbnail">
+                                <h4>Thumbnail</h4>
+                            </div>
+                            <div class="content">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <div class="end">
+                                    <div class="left">
+                                        <button class="view">View</button>
+                                        <button class="edit">Edit</button>
+                                    </div>
+                                    <div class="right">
+                                        <p>9 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-33">
+                            <div class="thumbnail">
+                                <h4>Thumbnail</h4>
+                            </div>
+                            <div class="content">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <div class="end">
+                                    <div class="left">
+                                        <button class="view">View</button>
+                                        <button class="edit">Edit</button>
+                                    </div>
+                                    <div class="right">
+                                        <p>9 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="thumbnail">
+                                <h4>Thumbnail</h4>
+                            </div>
+                            <div class="content">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <div class="end">
+                                    <div class="left">
+                                        <button class="view">View</button>
+                                        <button class="edit">Edit</button>
+                                    </div>
+                                    <div class="right">
+                                        <p>9 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="thumbnail">
+                                <h4>Thumbnail</h4>
+                            </div>
+                            <div class="content">
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <div class="end">
+                                    <div class="left">
+                                        <button class="view">View</button>
+                                        <button class="edit">Edit</button>
+                                    </div>
+                                    <div class="right">
+                                        <p>9 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <hr />
             <h4><mark>footer</mark></h4>
