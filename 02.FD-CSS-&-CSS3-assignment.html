@@ -14,8 +14,12 @@
             /* border: 1px solid black; */
         }
 
+        body {
+            background-image: radial-gradient(circle, #8ff2e0, #9be9f3, #b7dff3, #ccd6e4, #d1d1d1);
+        }
+
         .container {
-            width: 90%;
+            width: 85%;
             margin: 0 auto;
         }
 
@@ -36,13 +40,36 @@
         h2 {
             text-decoration: underline;
             text-align: center;
+            background-color: teal;
+            color: white;
+            padding: 10px 0;
+            animation-name: move;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
         }
 
-        div[class*="que"] {
-            background-color: burlywood;
+        @keyframes move{
+            0%{
+                background-color: gray;
+            }
+            50%{
+                color: rgb(137, 226, 230);
+            }
+            100%{
+                background-color: rgb(97, 95, 95);
+            }
+        }
+
+        div[id*="que"] {
+            background-color: darkgrey;
             padding: 10px 20px;
             margin: 30px auto;
         }
+
+        /* #que20 {
+            background-color: white !important;
+        } */
 
         p {
             font-size: 20px;
@@ -105,6 +132,7 @@
         .content p {
             margin: 0;
             padding: 10px;
+            font-size: 19px;
         }
 
         .end {
@@ -131,6 +159,39 @@
         .right p {
             font-size: 15px;
         }
+
+        .first {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .second {
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            border: 1px dashed black;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            transition: transform .5s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: blue;
+            color: white;
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 
@@ -141,11 +202,39 @@
             <h4>(Questions and Answers made by HTML vscode editor with usage of <mark>CSS & CSS3</mark>)</h4>
         </div>
         <br />
-        <hr /><br />
+        <hr />
+        <nav>
+            <ul class="first">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#que1">&nbsp;Que1&nbsp;</a></li>
+                <li><a href="#que2">&nbsp;Que2&nbsp;</a></li>
+                <li><a href="#que3">&nbsp;Que3&nbsp;</a></li>
+                <li><a href="#que4">&nbsp;Que4&nbsp;</a></li>
+                <li><a href="#que5">&nbsp;Que5&nbsp;</a></li>
+                <li><a href="#que6">&nbsp;Que6&nbsp;</a></li>
+                <li><a href="#que7">&nbsp;Que7&nbsp;</a></li>
+                <li><a href="#que8">&nbsp;Que8&nbsp;</a></li>
+                <li><a href="#que9">&nbsp;Que9&nbsp;</a></li>
+                <li><a href="#que10">Que10</a></li>
+            </ul>
+            <ul class="second">
+                <li><a href="#que11">Que11</a></li>
+                <li><a href="#que12">Que12</a></li>
+                <li><a href="#que13">Que13</a></li>
+                <li><a href="#que14">Que14</a></li>
+                <li><a href="#que15">Que15</a></li>
+                <li><a href="#que16">Que16</a></li>
+                <li><a href="#que17">Que17</a></li>
+                <li><a href="#que18">Que18</a></li>
+                <li><a href="#que19">Que19</a></li>
+                <li><a href="#que20">Que20</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
         <div class="container">
-            <div class="que1">
+            <div id="que1">
                 <h2>1. What are the benefits of using CSS?</h2>
                 <dl>
                     <dt>CSS saves time</dt>
@@ -173,7 +262,7 @@
                         combines with HTML to make responsive design possible.</dd>
                 </dl>
             </div>
-            <div class="que2">
+            <div id="que2">
                 <h2>2. What are the disadvantages of CSS?</h2>
                 <dl>
                     <dt>Security Issues</dt>
@@ -194,7 +283,7 @@
                         increases.</dd>
                 </dl>
             </div>
-            <div class="que3">
+            <div id="que3">
                 <h2>3. What is the difference between CSS2 and CSS3?</h2>
                 <p>Cascading Style Sheets or CSS manage the complete computing machine designing with one-click changes.
                     the latest version of CSS is that the CSS3 version primarily differs from CSS2 at intervals the
@@ -240,7 +329,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="que4">
+            <div id="que4">
                 <h2>4. Name a few CSS style components</h2>
                 <h3>The components of CSS style are:</h3>
                 <dl>
@@ -277,7 +366,7 @@
                         mechanism which can be used to view the offline websites.</dd>
                 </dl>
             </div>
-            <div class="que5">
+            <div id="que5">
                 <h2>5. What do you understand by CSS opacity?</h2>
                 <p>The opacity property in CSS specifies how transparent an element is.
                     <br><br>Opacity has a default initial value of 1 (100% opaque).Values are a number from 0 to 1
@@ -289,7 +378,7 @@
                     /* Global values */<br>
                     opacity: inherit | initial | revert | revert-layer | unset</p>
             </div>
-            <div class="que6">
+            <div id="que6">
                 <h2>6. How can the background color of an element be changed?</h2>
                 <p>To change background color of an element we have <q>background-color</q> property in css<br>
                     We can use this property in any element to change its background color. The background of an element
@@ -297,7 +386,7 @@
                 <p><b><u>Syntax</u></b><br> background-color: property value(i.e. color name);<br>It has a default value
                     i.e transparent.</p>
             </div>
-            <div class="que7">
+            <div id="que7">
                 <h2>7. How can image repetition of the backup be controlled?</h2>
                 <p>To control image repetition of the backup we have <q>background-repeat</q> property in css<br>
                     Use this property and give property value <q>no-repeat</q> value for the background-repeat property
@@ -307,7 +396,7 @@
                 <p><b><u>Syntax</u></b><br>background-repeat: repeat | repeat-x | repeat-y | no-repeat | initial |
                     inherit;</p>
             </div>
-            <div class="que8">
+            <div id="que8">
                 <h2>8. What is the use of the background-position property?</h2>
                 <p>The <q>background-position</q> property in CSS is mainly used to sets the initial position for the
                     background image ie., it is used to set an image at a certain position. The position that is
@@ -316,14 +405,14 @@
                     repeated both vertically and horizontally.</p>
                 <p><b><u>Syntax:</u></b><br>background-position: value;</p>
             </div>
-            <div class="que9">
+            <div id="que9">
                 <h2>9. Which property controls the image scroll in the background?</h2>
                 <p>To control image scroll in the background we have <q>background-attachment</q> property in CSS. Which
                     is used to specify the kind of attachment of the background image with respect to its container. It
                     can be set to scroll or make it remain fixed. It can be applied to all HTML elements.</p>
                 <p><b><u>Syntax:</u></b><br>background-attachment: scroll | fixed | local | initial | inherit;</p>
             </div>
-            <div class="que10">
+            <div id="que10">
                 <h2>10. Why should background and color be used as separate properties?</h2>
                 <dl>
                     <dt>background</dt>
@@ -353,7 +442,7 @@
                         further.</dd>
                 </dl>
             </div>
-            <div class="que11">
+            <div id="que11">
                 <h2>11. How to center block elements using CSS1?</h2>
                 <p>There are two steps to center block elements using CSS1-</p>
                 <dl>
@@ -371,7 +460,7 @@
                 <p><b><u>example</u></b><br>element {<br> &nbsp; &nbsp; &nbsp; width:200px;<br> &nbsp; &nbsp; &nbsp;
                     margin:0 auto;<br>}</p>
             </div>
-            <div class="que12">
+            <div id="que12">
                 <h2>12. How to maintain the CSS specifications?</h2>
                 <p>To maintain the CSS specifications we have to understand what is CSS specifications</p>
                 <p>The Specification defines how CSS properties should be implemented by browser vendors along with
@@ -397,7 +486,7 @@
                     works behind the scene and how it works with other CSS properties.</p>
                 <p>Implementing this specifications is the way to maintain the CSS specifications.</p>
             </div>
-            <div class="que13">
+            <div id="que13">
                 <h2>13. What are the ways to integrate CSS as a web page?</h2>
                 <p>There are three methods to integrate CSS as a web pages.</p>
                 <dl>
@@ -412,7 +501,7 @@
                         to make changes on multiple pages.</dd>
                 </dl>
             </div>
-            <div class="que14">
+            <div id="que14">
                 <h2>14. What is embedded style sheets?</h2>
                 <p>An Embedded style sheet is a CSS style specification method used with HTML. You can embed the entire
                     stylesheet in an HTML document by using the STYLE element in the head section of a HTML document.
@@ -424,13 +513,13 @@
                     <dd>=> No extra download is required to import the information.</dd>
                 </dl>
             </div>
-            <div class="que15">
+            <div id="que15">
                 <h2>15. What are the external style sheets?</h2>
                 <p>An external style sheet is a separate CSS file that can be linked to its actual HTML document with
                     the help of &lt; link &gt; tag in head section of HTML document. Multiple webpages can use the same
                     link to access the stylesheet.</p>
             </div>
-            <div class="que16">
+            <div id="que16">
                 <h2>16. What are the advantages and disadvantages of using external style sheets?</h2>
                 <dl>
                     <dt>The advantages of External Style Sheets are:</dt>
@@ -449,7 +538,7 @@
                     <dd>- For small number of style definitions, it is not viable.</dd>
                 </dl>
             </div>
-            <div class="que17">
+            <div id="que17">
                 <h2>17. What is the meaning of the CSS selector?</h2>
                 <p>CSS selector is a pattern of elements and other terms that tell the browser which HTML elements
                     should be selected to have the CSS property values inside the rule applied to them. It is the first
@@ -466,7 +555,7 @@
                     <li>Group selector</li>
                 </ul>
             </div>
-            <div class="que18">
+            <div id="que18">
                 <h2>18. What are the media types allowed by CSS?</h2>
                 <p>One of the most important features of style sheets is that they specify how a document is to be
                     presented on different media: on the screen, on paper, with a speech synthesizer, with a braille
@@ -515,7 +604,7 @@
                     <br>
                 </dl>
             </div>
-            <div class="que19">
+            <div id="que19">
                 <h2>19. What is the rule set?</h2>
                 <p>Each (valid) declaration block is preceded by one or more comma-separated selectors, which are
                     conditions selecting some elements of the page. A selector group and an associated declarations
@@ -531,7 +620,7 @@
                 <p><b><u>example:</u></b><br>h1 { color : yellow ; font-size : 11px ; }<br> where <q>h1</q> is selector
                     and what is in curly brackets known as declaration block</p>
             </div>
-            <div class="que20">
+            <div id="que20">
                 <h2>20. Create Layouts</h2>
                 <div class="layouts">
                     <div class="row">
