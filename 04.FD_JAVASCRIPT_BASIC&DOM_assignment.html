@@ -74,6 +74,19 @@
             list-style-position: inside;
             padding: 5px 0;
         }
+        #js-info{
+            text-align: left;
+            font-size: 20px;
+            /* padding-left: 35px; */
+        }
+        #date{
+            text-align: right;
+            font-size: 20px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -82,6 +95,12 @@
         <div class="container">
             <h1>FED - JAVASCRIPT BASIC & DOM Assignment</h1>
             <h4>(Questions and Answers made by HTML vscode editor.)</h4>
+        </div>
+        <hr />
+        <br />
+        <div class="container row">
+            <span id="js-info"></span>
+            <span id="date"></span>
         </div>
         <br />
         <hr />
@@ -397,3 +416,18 @@
 </body>
 
 </html>
+
+
+<script>
+    
+    alert("Welcome to My JavaScript Assignment")
+    confirm("Are you sure, You wanna see it?")
+    let viewer = prompt("What is Your name :- ")
+    document.getElementById("js-info").innerHTML = `Welcome to My JavaScript Assignment :- ${viewer}`
+    document.getElementById("js-info").style.color = "teal"
+
+    let date = Date().slice(0, 15);
+    document.getElementById("date").innerHTML = `Date : ${date}`
+    document.getElementById("date").style.color = "teal"
+
+</script>
