@@ -48,9 +48,13 @@
             margin: 30px auto;
         }
 
-        p {
+        p, li, dt, dd, blockquote {
             color: white;
             font-size: 20px;
+        }
+
+        li {
+            list-style-position: inside;
         }
     </style>
 </head>
@@ -68,15 +72,111 @@
         <div class="container">
             <div id="que1">
                 <h2>1. What is JQuery?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, eius!</p>
+                <p>jQuery is a lightweight JavaScript <u><b>library</b></u>.</p>
+                <p>The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot
+                    of common tasks that require many lines of JavaScript code to accomplish, and wraps them into
+                    methods that you can call with a single line of code.</p>
+                <p><b><u>jQuery by itself is not a programming language</u></b>. It is a tool that you can use to
+                    facilitate web development in JavaScript.</p>
             </div>
             <div id="que2">
-                <h2>2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, JQuery Animation?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, eius!</p>
+                <h2>2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, JQuery Animation?
+                </h2>
+                <p><b><u>Apply CSS Using JQuery</u></b> :</p>
+                <blockquote>
+                    <p>There are many types of CSS methods, which means that each method has the same name but takes
+                        different parameters.</p>
+                    <p>
+                        We will discuss only two methods
+                        <br>
+                    <dl>
+                        <dt><u>one of which is used to change a single CSS property</u> -</dt>
+                        <dd>this method only takes 2 parameters, namely the property name and the value.</dd>
+                        <dd>Syntax : $().css(propertyname, value);</dd>
+                        <br>
+                        <dt><u>The other is used to change multiple CSS properties simultaneously.</u> -</dt>
+                        <dd>With the second method, you can pass a JSON string object as a parameter that you want to
+                            apply to the HTML element.</dd>
+                        <dd>JSON string objects contain CSS properties along with their values.</dd>
+                        <dd>Syntax : $().css(properties);</dd>
+                    </dl>
+
+
+                    </p>
+                    <p>
+                        <br>
+
+                    </p>
+
+                </blockquote>
+                <br>
+                <p><b><u>Add Class and Remove Class in JQuery</u></b> :</p>
+                <blockquote>
+                    <p>
+                        The 'addClass()' or 'removeClass()' methods are used to Add and Remove class in jQuery.
+                        <br><br>
+                        <u><b>Syntax :</b></u>
+                    <ul>
+                        <li>Adding a class :</li>
+                        <blockquote>$('selector').addClass(class_name);</blockquote>
+                        <li>Removing a class:</li>
+                        <blockquote>$('selector').removeClass(class_name);</blockquote>
+                    </ul>
+                    </p>
+                </blockquote>
+                <br>
+                <p>
+                    <b><u>JQuery Animation</u></b> :
+                <blockquote>
+                    <ul>
+                        <li>we can produce various types of animation using the animate() method in jQuery.</li>
+                        <li>This method can produce simple to complex animation in the web page.</li>
+                        <li>Using animation, we can change the properties of HTML elements such as background colour,
+                            changing border styles, changing navigation properties, formatting the font properties, etc.
+                        </li>
+                    </ul>
+                </blockquote>
+
+                </p>
             </div>
             <div id="que3">
                 <h2>3. How to create slider with animation?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, eius!</p>
+                <p>To create slider with jQuery, follow the following steps :
+                <ol>
+                    <li>Create the Base Mark Up. What we need is a series of images in an unordered list</li>
+                    <li>Add jQuery Code to hide unfocused images</li>
+                    <li>Add “Next” and “Previous” Buttons</li>
+                    <li>Add the .Animate() Method</li>
+                </ol>
+                </p>
+                <p>We can add various effects using jQuery such as hide/show, fading effects, animation, call back and
+                    many more to create a slider.</p>
+                <p>The jQuery contains the library of several functions that provide techniques for adding animation to
+                    a web page. These include simple animation, standard animations.</p>
+                <p>for slider with animation : we can produce various types of animation using the animate() method in
+                    jQuery.</p>
+                <p> The animate option when set to true will create an animation effect when you directly click at any
+                    point on the slider’s axis</p>
+                <pre>
+                    <p>
+        Syntax :
+                        $  ( " .selector " )  .slider (
+                        { animate : value }
+                     ) ;
+                     </p>
+                </pre>
+                <p>
+                    Parameters: This option accepts three parameters as discussed below:
+                <dl>
+                    <dt><u>boolean:</u></dt>
+                    <dd> If set to true, the slider will be animated. By default, the value is false</dd>
+                    <dt><u>string:</u></dt>
+                    <dd>The string value used to set the speed of the slider cursor. The available values are slow,
+                        normal, fast.</dd>
+                    <dt><u>number:</u></dt>
+                    <dd>The duration of the animation in milliseconds.</dd>
+                </dl>
+                </p>
             </div>
         </div>
     </section>
