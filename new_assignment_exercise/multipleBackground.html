@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Background</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .row{
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #202020;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .service{
+            padding: 120px 0;
+            text-align: end;
+        }
+        .sub-section{
+            position: relative;
+        }
+        h2{
+            margin: 0 40px 40px 0;
+            padding-right: 30px;
+            color: white;
+            letter-spacing: 2px;
+            border-right: 5px solid orangered;
+        }
+        h5{
+            letter-spacing: 2px;
+            color: orangered;
+            padding: 40px 40px 10px 0;
+        }
+        p{
+            line-height: 25px;
+            font-size: 13px;
+            padding: 0 40px 0 100px;
+            color: gray;
+        }
+        .logo{
+            position: absolute;
+            right: -25px;
+            top: 50%;
+        }
+        .logo{
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="row">
+            <div class="col-50 service">
+                <h2>OUR SERVICES</h2>
+                <div class="sub-section">
+                    <h5>WEB DESIGN</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been
+                        the industry's standard dummy text ever.</p>
+                        <div class="logo"><img src="images/multiple background/web-design.png" alt=""></div>
+                </div>
+                <div class="sub-section">
+                    <h5>PRINT DESIGN</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ip sum has been the industry's standard dummy text ever.</p>
+                        <div class="logo"><img src="images/multiple background/print-design.png" alt=""></div>
+                </div>
+                <div class="sub-section">
+                    <h5>PHOTOGRAPHY</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been
+                        the industry's standard dummy text ever.</p>
+                        <div class="logo"><img src="images/multiple background/photography.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-50">
+                <img src="images/multiple background/background.png" width="100%" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
