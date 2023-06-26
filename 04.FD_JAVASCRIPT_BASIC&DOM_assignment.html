@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; */
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        hr {
+            width: 80%;
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-decoration: underline;
+            text-align: center;
+            color: #373d3f;
+            /* color: bisque; */
+            background-color: sandybrown;
+            padding: 10px 0;
+        }
+
+        div[id*="que"] {
+            background-color: #efd469;
+            /* background-color: tan; */
+            padding: 2px 20px;
+            margin: 30px auto;
+        }
+
+        p {
+            /* color: cornsilk; */
+            color: #373d3f;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        li {
+            list-style-position: inside;
+            padding: 5px 0;
+        }
+        #js-info{
+            text-align: left;
+            font-size: 20px;
+            /* padding-left: 35px; */
+        }
+        #date{
+            text-align: right;
+            font-size: 20px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <h1>FED - JAVASCRIPT BASIC & DOM Assignment</h1>
+            <h4>(Questions and Answers made by HTML vscode editor with usage of JavaScript.)</h4>
+        </div>
+        <hr />
+        <br />
+        <div class="container row">
+            <span id="js-info"></span>
+            <span id="date"></span>
+        </div>
+        <br />
+        <hr />
+    </header>
+    <section>
+        <div class="container">
+            <div id="que1">
+                <h2>1. What is JavaScript?</h2>
+                <p>JavaScript is a scripting language that enables you to create dynamically updating content, control
+                    multimedia, animate images, and pretty much everything else.</p>
+                <p>In simple words,</p>
+                <p>JavaScript is a text-based programming language used both on the client-side and server-side that
+                    allows you to make web pages interactive. Where HTML and CSS are languages that give structure and
+                    style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>
+            </div>
+            <div id="que2">
+                <h2>2. What is the use of isNaN function?</h2>
+                <p>In Javascript isNaN() function is used to check if any value is NaN (which stands for 'Not-a-Number')
+                    or not. If the value passed is NaN, the function returns true else, it returns false.</p>
+                <p>isNaN() is a function property of the global object.</p>
+            </div>
+            <div id="que3">
+                <h2>3. What is negative Infinity?</h2>
+                <p>In JavaScript there is a concept called negative infinity, which is less than any real number.</p>
+                <p>The symbol “-∞” is used to denote negative infinity. <br>It is an infinitely long zip line in
+                    opposite directions.</p>
+                <p>Number. NEGATIVE_INFINITY returns negative infinity.<br>Number. NEGATIVE_INFINITY is "a number lower
+                    than any other number".</p>
+            </div>
+            <div id="que4">
+                <h2>4. Which company developed JavaScript?</h2>
+                <p>JavaScript was created at Netscape Communications by Brendan Eich in 1995.</p>
+                <p>Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web
+                    browser, Netscape Navigator. <br>Initially known as LiveScript, Netscape changed the name to
+                    JavaScript.</p>
+            </div>
+            <div id="que5">
+                <h2>5. What are undeclared and undefined variables?</h2>
+                <p>
+                <dl>
+                    <dt><u><b>Undeclared Variables</b></u></dt><br>
+                    <dd>=> undeclared variables are those that have not been declared or defined in the current scope
+                    </dd>
+                    <br><br><br>
+                    <dt><u><b>Undefined Variables</b></u></dt><br>
+                    <dd>=> undefined variables are those that have been declared but not given a value.</dd>
+                </dl>
+                </p>
+            </div>
+            <div id="que6">
+                <h2>6. Write the code for adding new elements dynamically?</h2>
+                <p>We can add new elements dynamically in JavaScript by using the "createElement()" method. </p>
+                <br>
+                <pre>
+                    <u><b>Syntax:</b></u>
+
+                        document.createElement("&lt; tagName &gt;");  
+                        // Where &lt; tagName &gt; can be any HTML 
+                        // tagName like div, ul, button, etc.
+                        
+                        // newDiv element has been created
+                        For Eg: let newDiv = document.createElement("div");
+                </pre>
+            </div>
+            <div id="que7">
+                <h2>7. What is the difference between ViewState and SessionState?</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ViewState</th>
+                            <th>SessionState</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Viewstate is client-side state management</td>
+                            <td>Sessionstate is a server-side state management</td>
+                        </tr>
+                        <tr>
+                            <td>Viewstate information is stored in hidden fields in client-side.</td>
+                            <td>Session data is stored in the server and keys are stored in cookies files.</td>
+                        </tr>
+                        <tr>
+                            <td>Viewstate value is accessible with in the same page.</td>
+                            <td>Session variable can be accessible across pages.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                Note := If cookies are disabled then Session id key is passed via query string.
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div id="que8">
+                <h2>8. What is === operator?</h2>
+                <p>it is called strict equality ( === ) operator. It is a part of Relational(Comparison) operator in JS.
+                </p>
+                <p>The strict equality ( === ) operator checks whether its two operands are equal, returning a Boolean
+                    result.<br>It means strict equality ( === ) returns true only if both values and data types are the
+                    same for the two variables.</p>
+            </div>
+            <div id="que9">
+                <h2>9. How can the style/class of an element be changed?</h2>
+                <p>There is two ways we can change the style/class of an element in JavaScript.</p>
+                <p>method 1 : Changing CSS with the help of the style property:<br><b>Syntax :
+                        document.getElementById("id").style.property = new_style</b></p>
+                <p>method 2 : Changing the class itself – We can use two properties that can be used to manipulate the
+                    classes.
+                <blockquote>
+                    1. The classList Property: The classList is a read-only property that returns the CSS class names of
+                    an element as a DOMTokenList object.<br><b>Syntax : document.getElementById("id").classList</b>
+                    <br>
+                    <blockquote>You can use the below-mentioned methods to add classes, remove classes, and toggle
+                        between different
+                        classes respectively.
+                        <br><br>
+                        1. The add() method: It adds one or more classes.<br>
+                        2. The remove() method: It removes one or more classes.<br>
+                        3. The toggle() method: If the class does not exist it adds it and returns true. It removes the
+                        class and returns false. The second boolean argument forces the class to be added or removed.
+                    </blockquote>
+                </blockquote>
+                <blockquote>
+
+                    2. The className Property: This property is used to set the current class of the element to the
+                    specified class.<br><b>Syntax : document.getElementById("id").className = class</b>
+                </blockquote>
+                </p>
+            </div>
+            <div id="que10">
+                <h2>10. How to read and write a file using JavaScript?</h2>
+                <p>The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript.
+                </p>
+                <p>The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads
+                    the full file into memory and stores it in a buffer.<br><b>Syntax : fs.readFile( file_name,
+                        encoding, callback_function )</b>
+                    <br>
+                <blockquote>
+                    Parameters:
+                    <br>
+                    <dl>
+                        <dt>filename :</dt>
+                        <dd>It contains the filename to be read, or the whole path if the file is saved elsewhere.</dd>
+                        <dt>encoding :</dt>
+                        <dd>It stores the file’s encoding. ‘utf8’ is the default setting.</dd>
+                        <dt>callback function :</dt>
+                        <dd>This is a function that is invoked after the file has been read. It requires two inputs.
+                        </dd>
+                        <dt>err :</dt>
+                        <dd>If there was an error.</dd>
+                        <dt>data :</dt>
+                        <dd>The file’s content.</dd>
+                        <dt>Return Value :</dt>
+                        <dd>It returns the contents contained in the file, as well as any errors that may have occurred.
+                        </dd>
+                    </dl>
+                </blockquote>
+                </p>
+                <p>The fs.writeFile() function is used to write data to a file in an asynchronous manner. If the file
+                    already exists, it will be replaced.
+                    <br>
+                    <b>Syntax : fs.writeFile( file_name, data, options, callback )</b>
+                    <br>
+                <blockquote>
+                    Parameters:
+                    <dl>
+                        <dt>file_name:</dt>
+                        <dd>It’s a string, a buffer, a URL, or a file description integer that specifies the location of
+                            the file to be written. When you use a file descriptor, it will function similarly to the
+                            fs.
+                            write()
+                            method.</dd>
+                        <dt>data:</dt>
+                        <dd>The data that will be sent to the file is a string, Buffer, TypedArray, or DataView.</dd>
+                        <dt>options:</dt>
+                        <dd>It’s a string or object that may be used to indicate optional output options. It includes
+                            three
+                            more parameters that may be selected.</dd>
+                        <dt>encoding:</dt>
+                        <dd>It’s a string value that indicates the file’s encoding. ‘utf8’ is the default setting.</dd>
+                        <dt>mode:</dt>
+                        <dd>The file mode is specified by an integer number called mode. 0o666 is the default value.
+                        </dd>
+                        <dt>flag:</dt>
+                        <dd>This is a string that indicates the file-writing flag. ‘w’ is the default value.</dd>
+                        <dt>callback:</dt>
+                        <dd>This function gets invoked when the method is run.</dd>
+                        <dt>err:</dt>
+                        <dd>If the process fails, this is the error that will be thrown.</dd>
+                    </dl>
+                </blockquote>
+                </p>
+            </div>
+            <div id="que11">
+                <h2>11. What are all the looping structures in JavaScript?</h2>
+                <p>Basically loop structures allow you to run one or more lines of code repetitively.</p>
+                <p>You can repeat the statements in a loop structure until a condition is True , until a condition is
+                    False , a specified number of times, or once for each element in a collection.</p>
+                <p>The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in
+                    loops. It makes the code compact. It is mostly used in array.
+                    <br>
+                    There are four types of loops in JavaScript.
+                <ol>
+                    <li>for loop</li>
+                    <li>while loop</li>
+                    <li>do-while loop</li>
+                    <li>for-in loop</li>
+                </ol>
+                </p>
+            </div>
+            <div id="que12">
+                <h2>12. How can you convert the string of any base to an integer in JavaScript?</h2>
+                <p>For converting the string of any base to an intenger in JavaScript, we would be using a method (or a
+                    function) provided by JavaScript called as parseInt(). </p>
+                <p>This is a special method, provided by JavaScript, that takes an integer value (of any base which is
+                    either specified or not) and further converts the string into an integer value.</p>
+                <blockquote>
+                    Following is the syntax that a user may use to convert a string into an integer value (of any base)
+                    <br>
+                    <b>Syntax : parseInt(string_value, base)</b>
+                    <br><br>
+                    Alternatively, if we don’t want to specify the base value and just want to convert our string value
+                    into an integer value itself, then we may use the following syntax also
+                    <br>
+                    <b>Syntax : parseInt(string_value)</b>
+                </blockquote>
+            </div>
+            <div id="que13">
+                <h2>13. What is the function of the delete operator?</h2>
+                <p>The function of delete operator is to set the value of an object property to null or undefined. But the property will still exist in the object and some operators like for in loop will still show the presence of the null or undefined property.</p>
+                <p>Using the delete property in loops slows down the program significantly. So, this method should only be used when it is absolutely necessary to delete an object property.</p>
+                <p>
+                    The delete operator doesn’t work for variables or function, it returns false and the actual variables and functions remain untouched.
+                    <br>
+                    Another thing to keep in mind is that this operator doesn’t delete property value rather the property itself.
+                </p>
+                <p>So, using pop(), shift(), or splice() methods is clearly a better approach to deleting array elements.</p>
+            </div>
+            <div id="que14">
+                <h2>14. What are all the types of Pop up boxes available in JavaScript?</h2>
+                <p>There are three types of pop-up boxes available in JavaScript namely Alert Box, Confirm Box and Prompt Box.</p>
+                <p>
+                    <b><u>Alert Box :</u></b> It is used when a warning message is needed to be produced. When the alert
+                    box is displayed to the user, the user needs to press ok and proceed.
+                    <br>
+                    <b>Syntax :- alert("your Alert here")</b>
+                </p>
+                <p>
+                    <b><u>Prompt Box :</u></b> It is a type of pop up box which is used to get the user input for
+                    further use. After entering the required details user have to click ok to proceed next stage else by
+                    pressing the cancel button user returns the null value.
+                    <br>
+                    <b>Syntax :- prompt("your Prompt here")</b>
+                </p>
+                <p>
+                    <b><u>Confirm Box :</u></b> It is a type of pop-up box that is used to get authorization or
+                    permission from the
+                    user. The user has to press the ok or cancel button to proceed.
+                    <br>
+                    <b>Syntax :- confirm("your query here")</b>
+                </p>
+            </div>
+            <div id="que15">
+                <h2>15. What is the use of Void (0)?</h2>
+                <p>
+                    JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+                </p>
+                <p>
+                    <b>Example :- Using “javascript:void(0);” in anchor tag:</b> Writing “javascript:void(0);” in anchor tag can prevent the page to reload and JavaScript functions & can be called on single or double clicks easily.
+                </p>
+                <p>
+                    However, in the old browsers which run ES3 engine, undefined is a global property and can be changed. On the other hand, it's not possible to override the void operator. Hence, void is used as a replacement for undefined to get the undefined value in a safe way.
+                </p>
+            </div>
+            <div id="que16">
+                <h2>16. How can a page be forced to load another page in JavaScript?</h2>
+                <p>In JavaScript, we can use window.location object to force a page to load another page.<br>We can use
+                    the location object to set the URL of a new page.</p>
+                <p>There are different ways – Syntax<br><br>window.location.href property - <b>window.location.href =
+                        "new_url";</b>, <br>window.location.assign() - <b>window.location.assign("new_url");</b> and
+                    <br>window.location.replace() - <b>window.location.replace("new_url");</b>
+                    <br>
+                    to set the URL of a new page using the location object.
+                </p>
+            </div>
+            <div id="que17">
+                <h2>17. What are the disadvantages of using innerHTML in JavaScript?</h2>
+                <p>If you use innerHTML in JavaScript, the disadvantage is</p>
+                <ul>
+                    <li>Content is replaced everywhere</li>
+                    <li>We cannot use it like “appending to innerHTML</li>
+                    <li>Even if you use += like “innerHTML = innerHTML + ‘html'” still the old content is replaced by
+                        html</li>
+                    <li>The entire innerHTML content is re-parsed and builds into elements. Therefore, it’s much slower
+                    </li>
+                    <li>The innerHTML does not provide validation, and therefore we can potentially insert valid and
+                        broken HTML in the document and break it</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <hr />
+            <h4><mark>footer</mark></h4>
+            <hr />
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+<script>
+    
+    alert("Welcome to My JavaScript Assignment")
+    confirm("Are you sure, You wanna see it?")
+    let viewer = prompt("What is Your name :- ")
+    document.getElementById("js-info").innerHTML = `Welcome to My JavaScript Assignment :- ${viewer}`
+    document.getElementById("js-info").style.color = "teal"
+
+    let date = Date().slice(0, 15);
+    document.getElementById("date").innerHTML = `Date : ${date}`
+    document.getElementById("date").style.color = "teal"
+
+</script>
