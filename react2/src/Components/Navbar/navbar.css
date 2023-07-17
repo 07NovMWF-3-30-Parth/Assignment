@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li a:hover,
+.quickLinks button:hover {
+    border-bottom: 2px solid orangered;
+}
