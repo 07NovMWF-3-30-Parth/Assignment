@@ -36,7 +36,7 @@ h2 {
 
 div[id*="que"] {
   background-color: rgb(103, 202, 202);
-  padding: 2px 20px;
+  padding: 20px 20px;
   margin: 30px auto;
 }
 
@@ -45,8 +45,7 @@ li,
 dt,
 dd,
 blockquote,
-.ansInfo,
-form {
+.ansInfo {
   color: white;
   font-size: 20px;
 }
@@ -83,5 +82,17 @@ button {
   background-color: black;
   color: white;
   padding: 10px 20px;
+}
+
+.crud {
+  text-align: center;
+}
+
+.crud button {
+  background-color: lightblue;
   margin: 5px 30px;
+}
+
+table {
+  text-align: center;
 }

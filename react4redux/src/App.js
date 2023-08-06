@@ -1,4 +1,7 @@
 import './App.css';
+import CRUD from './CRUD';
+import Create from './components/Create';
+import Table from './components/Table';
 
 function App() {
   return (
@@ -58,6 +61,19 @@ function App() {
               <br />
               <br />
               The purpose of the second argument that can optionally be passed to setState is a to make updates after the state is changed. This function will get called once the state has been updated, and the callback will receive the updated value of the state.
+            </p>
+          </div>
+          <div id='que5'>
+            <h2>5. Create a Table and Search data from table using React Js? </h2>
+            <p className='ans'>
+              <Table />
+              <span>Note : If there is no data in table than add data from below form and refresh the page.</span>
+            </p>
+          </div>
+          <div id='que6'>
+            <h2>5. Create Login registration with CRUD Application using API (Redux) </h2>
+            <p className='ans'>
+              <Create />
             </p>
           </div>
         </div>
